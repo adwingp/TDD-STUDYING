@@ -17,7 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::post('customers', 'CustomerController@index');
 Route::post('addcustomer', 'CustomerController@store');
 Route::get('editcustomer/{id}', 'CustomerController@edit');
